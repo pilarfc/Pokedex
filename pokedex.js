@@ -35,6 +35,7 @@ function crearPokemon () {
    pokemons.push(pokemon)
    mostrarPokemons();
    mostrarPokemons2();
+   borrar();
 }
 
 
@@ -56,6 +57,12 @@ function crearPokemon () {
     var listaPokemons = document.getElementById("pokemones2").appendChild(lista);
  }
 
+   function borrar () {
+      var stringVacio = "";
+      document.getElementById("nombrePokemon").value = stringVacio;
+      document.getElementById("colorPokemon").value = stringVacio;
+      document.getElementById("puntosAtaque").value = stringVacio;
+   }
 /* function mostrarPokemons () {
   var listaPokemons = document.getElementById("listaPokemons");
   var lista = document.createElement("ul");
